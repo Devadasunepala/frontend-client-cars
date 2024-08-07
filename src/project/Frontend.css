@@ -1,0 +1,101 @@
+/* Homepage.css
+.container {
+    padding: 20px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car-item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.car-item h1 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .car-item {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .car-item h1 {
+        font-size: 14px;
+    }
+} */
+
+/* Frontend.css */
+
+/* Frontend.css */
+
+.container {
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .car-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .car-item img {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.carousel .car-item h1 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel .car-item h1 {
+        font-size: 14px;
+    }
+
+    .carousel .car-item img {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel .car-item h1 {
+        font-size: 12px;
+    }
+
+    .carousel .car-item img {
+        height: 150px; /* Further adjust height for very small screens */
+    }
+}
