@@ -15,7 +15,7 @@ function RegistrationForm() {
         e.preventDefault();
        if(Name,carname,phonenumber,address,carname!=''){
         try {
-            const response = await axios.post('https://localhost:4002/userenquirydata', {
+            const response = await axios.post('https://backend-server-cars.vercel.app/userenquirydata', {
                 Name,
                 carname,
                 phonenumber,
